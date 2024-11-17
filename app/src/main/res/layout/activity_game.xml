@@ -1,0 +1,94 @@
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/classroom_background">
+
+    <TextView
+        android:id="@+id/text_box"
+        android:layout_width="321dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="#199bca"
+        android:padding="15dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/life_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lives: ❤❤❤"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:background="#d8ff00"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/text_box"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/button_proxy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proxy"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:padding="16dp"
+        android:background="@drawable/button_background"
+        android:elevation="8dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/guess_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter roll number"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:background="#199bca"
+        android:backgroundTint="#000000"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/result_text"
+        android:inputType="number"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/guess_field"
+        android:layout_marginTop="16dp"
+        android:background="?attr/selectableItemBackground"
+        android:elevation="8dp"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/gif_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+</RelativeLayout>
